@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+}
+
+.raccourci {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translate(50%, -50%);
+    z-index: 1;
+    background-color: #9300ff;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.raccourci ion-icon {
+    font-size: 30px;
+}
+
+main {
+    height: auto;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.container_choix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.titre {
+    width: 100%;
+    background-image: url('../Realisations/titre.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    font-size: 80px;
+    font-weight: bold;
+    color: #FCCB00;
+}
+
+.parties {
+    width: 90%;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+.partie {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+}
+
+.titre_partie {
+    z-index: 2;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: white;
+    box-shadow: 0 0 30px -10px black;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.dossier {
+    display: none;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.dossier_active {
+    display: flex;
+}
+
+.fichier {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.fichier:hover {
+    scale: 1.1;
+}
+
+.section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 30px 0;
+    position: relative;
+    margin-bottom: 100px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.scroll {
+    position: absolute;
+    top: 0;
+    height: 60px;
+    transform: translate(0, -100%);
+}
+
+.sous_titre {
+    font-size: 50px;
+    text-align: center;
+    color: #FCCB00;
+    font-weight: bold;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sous_titre::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 150%;
+    height: 1px;
+    background-color: black;
+    animation: sous_titre infinite 2s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.sous_titre::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 150%;
+    height: 1px;
+    background-color: black;
+    animation: sous_titre infinite 2s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+@keyframes sous_titre {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.container_liste_photos {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    grid-template-columns: repeat(auto-fill, 350px);
+    gap: 50px 20px;
+}
+
+.photo {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 3px 3px 5px 0 black;
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 500px;
+}
+
+.photo img {
+    width: 100%;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.photo:hover {
+    animation: vibration linear 0.3s;
+}
+
+.vid:hover {
+    animation: none;
+}
+
+.photo:hover ion-icon {
+    opacity: 1;
+}
+
+.photo:hover>img {
+    opacity: 1;
+}
+
+.photo ion-icon {
+    transition: 0.5s;
+    opacity: 0;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    font-size: 50px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+@keyframes vibration {
+    0% {
+        rotate: 0deg;
+    }
+
+    25% {
+        rotate: 5deg;
+    }
+
+    75% {
+        rotate: -5deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}
+
+.remove {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    padding-top: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    border: solid 1px black;
+}
+
+.remove ion-icon {
+    font-size: 60px;
+}
+
+.remove span {
+    font-size: 23px;
+}
+
+.defilement {
+    position: fixed;
+    z-index: 2;
+    left: 0%;
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    padding: 0 5px;
+}
+
+.defilement.open {
+    top: 0;
+}
+
+.defilement .fleche {
+    position: absolute;
+    font-size: 80px;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: flex;
+}
+
+.defilement .fleche:hover {
+    background-color: white;
+    color: black;
+}
+
+.defilement .fleche:active {
+    scale: 0.8;
+}
+
+.defilement .fleche:nth-of-type(1) {
+    left: 80px;
+}
+
+.defilement .fleche:nth-of-type(2) {
+    right: 80px;
+}
+
+.defilement .croix {
+    top: 30px;
+    right: 30px;
+    color: white;
+    position: absolute;
+    font-size: 80px;
+    cursor: pointer;
+    display: flex;
+}
+
+.container_photos {
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.select_photo {
+    max-height: 100%;
+    max-width: 100%;
+    top: 0%;
+    left: 100%;
+    display: none;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+@media (max-width:1240px) {
+
+    .titre {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:960px) {
+    .defilement {
+        visibility: hidden;
+        opacity: 0;
+        top: -50%;
+    }
+
+    .defilement.open {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .defilement .fleche:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .defilement .fleche {
+        font-size: 60px;
+        bottom: 10px;
+    }
+
+    .defilement .croix {
+        top: auto;
+        bottom: 10px;
+        right: 50%;
+        transform: translate(50%, 0);
+        font-size: 60px;
+    }
+
+    .section {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width:1100px) {
+
+    .sous_titre {
+        font-size: 35px;
+    }
+}
+
+@media (max-width:660px) {
+    .raccourci {
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+
+    .raccourci ion-icon {
+        font-size: 29px;
+    }
+
+    .sous_titre {
+        font-size: 25px;
+    }
+
+    .titre {
+        font-size: 40px;
+    }
+
+    .titre_partie {
+        font-size: 25px;
+    }
+
+    .fichier {
+        font-size: 15px;
+    }
+
+    .dossier div {
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .container_liste_photos {
+        grid-template-columns: repeat(auto-fill, 300px);
+    }
+
+    .container_liste_photos {
+        display: grid;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 95%;
+        grid-template-columns: repeat(auto-fill, 270px);
+        gap: 50px 20px;
+    }
+
+    .photo {
+        width: 270px;
+    }
+
+    .photo img {
+        opacity: 1;
+    }
+
+    .photo ion-icon {
+        opacity: 1;
+        font-size: 40px;
+    }
+
+    .remove ion-icon {
+        font-size: 40px;
+    }
+
+    .remove span {
+        font-size: 15px;
+    }
+}

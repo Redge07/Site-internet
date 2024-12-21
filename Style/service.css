@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.titre {
+    width: 100%;
+    background-image: url('../Realisations/titre.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    font-size: 80px;
+    font-weight: bold;
+    color: #FCCB00;
+}
+
+main {
+    height: auto;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 30px 0;
+    gap: 30px;
+}
+
+h1 {
+    background-color: #FCCB00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+
+.item {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 25px -12px black;
+}
+
+h2 {
+    color: #FCCB00;
+    font-weight: 800;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+p span {
+    color: #FCCB00;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contact {
+    text-align: center;
+    background-color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 0 25px -12px black;
+    transition: 0.5s;
+}
+
+.contact:hover {
+    color: white;
+    background-color: black;
+}
+
+@media (max-width: 700px) {
+    .titre {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 20px;
+    }
+}

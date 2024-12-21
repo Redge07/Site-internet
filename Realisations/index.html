@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGCCDT832D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-SGCCDT832D');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#E9E9E9">
+  <title>Vialle Construction</title>
+  <meta name="description"
+    content="Vialle Construction vous propose des réalisations de construction et de rénovation, incluant la conception, les finitions intérieures et extérieures, et les extensions">
+  <link rel="icon" href="../logo.png" type="image/png">
+  <link rel="stylesheet" href="../Style/header.css?vs=13" />
+  <link rel="stylesheet" href="../Style/realisation.css?vs=17" />
+  <link rel="preload" as="image" href="./titre.webp" type="image/webp">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <ion-icon class="sidebar open_menu" onclick="sidebar()" name="menu-outline"></ion-icon>
+  <ion-icon class="sidebar close_menu" onclick="sidebar()" name="close-outline"></ion-icon>
+  <div id="header_phone">
+    <div class="trait"></div>
+    <div class="trait"></div>
+    <div class="trait"></div>
+    <div class="trait"></div>
+    <div class="trait"></div>
+    <div class="onglets_phone">
+      <a href="../" class="onglet">Accueil</a>
+      <a href="../Services/" class="onglet">Services</a>
+      <a href="" class="onglet active">Réalisations</a>
+      <a href="../Avis/" class="onglet">Avis client</a>
+      <a href="../Contact/" class="onglet">Contact</a>
+    </div>
+    <div class="coord">
+      <span>2945 rue des Vers-luisant, J8B 2C9, Sainte-Adèle</span>
+      <span>438-990-8198</span>
+      <span>vialleconstruction@gmail.com</span>
+    </div>
+  </div>
+  <header id="header">
+    <div class="cadre"><a class="lien_a" href="../"><img src="../logo.png" alt="logo" loading="lazy"></a><span>VIALLE
+        CONSTRUCTION</span><a href="https://www.facebook.com/profile.php?id=61557296462746"><ion-icon
+          name="logo-facebook"></ion-icon></a><a href="https://www.tiktok.com/@vialleconstruction"><ion-icon
+          name="logo-tiktok"></ion-icon></a><a
+        href="https://www.instagram.com/vialle_construction?igsh=MWVoNnkyNTljbDZjYg=="><ion-icon
+          name="logo-instagram"></ion-icon></a></div>
+    <div class="onglets">
+      <a href="../" class="onglet">Accueil</a>
+      <a href="../Services/" class="onglet">Services</a>
+      <a href="" class="onglet active">Réalisations</a>
+      <a href="../Avis/" class="onglet">Avis client</a>
+      <a href="../Contact/" class="onglet">Contact</a>
+    </div>
+  </header>
+  <div class="raccourci" onclick="remonter()"><ion-icon name="arrow-up-outline"></ion-icon>Retour</br>au choix</div>
+  <main id="main">
+    <div class="container">
+      <div class="titre">REALISATIONS</div>
+      <div class="parties">
+        <div class="partie">
+          <span class="titre_partie" onclick="scroll_section(0)">Projet de A à Z</span>
+          <div class="dossier">
+            <a href='#traverse' class="fichier"><ion-icon name="arrow-forward-outline"></ion-icon>Conception et
+              réalisation - De la Traverse</a>
+            <a href='#maison' class="fichier"><ion-icon name="arrow-forward-outline"></ion-icon>Conception et
+              réalisation - Lac Tondohar</a>
+          </div>
+        </div>
+        <div class="partie">
+          <span class="titre_partie" onclick="scroll_section(1)">Nos Réalisations</span>
+          <div class="dossier">
+            <a href='#tally' class="fichier"><ion-icon name="arrow-forward-outline"></ion-icon>Finitition intérieur -
+              Tally-ho</a>
+            <a href='#morin' class="fichier"><ion-icon name="arrow-forward-outline"></ion-icon>Extension - Morin
+              height</a>
+            <a href='#lac' class="fichier"><ion-icon name="arrow-forward-outline"></ion-icon>Finition extérieur - Lac
+              Ashton</a>
+            <a href='#source' class="fichier"><ion-icon name="arrow-forward-outline"></ion-icon>Finition intérieur -
+              Montée de la source</a>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div id="traverse" class="scroll"></div>
+        <div class="sous_titre">Conception et réalisation -</br>Projet de la Traverse</div>
+        <div class="container_liste_photos">
+          <video class="photo vid" controls>
+            <source src="IMG/Traverse.mp4" type="video/mp4">
+            <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+          </video>
+          <div class="photo" onclick="test(this,0,-1)"><img class="source" src="IMG/Traverse/1 (3).webp" alt="photo"
+              loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,0,-1)"><img class="source" src="IMG/Traverse/1 (2).webp" alt="photo"
+              loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,0,-1)"><img class="source" src="IMG/Traverse/1 (1).webp" alt="photo"
+              loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+        </div>
+      </div>
+      <div class="section">
+        <div id="maison" class="scroll"></div>
+        <div class="sous_titre">Conception et réalisation -</br>Projet Lac Tondohar</div>
+        <div class="container_liste_photos">
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (1).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (2).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (3).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (4).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (5).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (6).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (7).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (8).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (9).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (10).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (11).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (12).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (13).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (14).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (15).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (16).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (17).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (18).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (19).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (20).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (21).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (22).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (23).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (24).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (25).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (26).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (27).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (28).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (29).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (30).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (31).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (32).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (33).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (34).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (35).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (36).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (37).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,1,-1)"><img class="source" src="IMG/Vers-Luisant/1 (38).webp"
+              width="350" alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+        </div>
+      </div>
+      <div class="section">
+        <div id="tally" class="scroll"></div>
+        <div class="sous_titre">Finitition intérieur - Tally-ho</div>
+        <div class="container_liste_photos">
+          <div class="photo" onclick="test(this,2,-1)"><img class="source" src="IMG/Tally/1 (1).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,2,-1)"><img class="source" src="IMG/Tally/1 (2).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,2,-1)"><img class="source" src="IMG/Tally/1 (3).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,2,-1)"><img class="source" src="IMG/Tally/1 (4).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,2,-1)"><img class="source" src="IMG/Tally/1 (5).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,2,-1)"><img class="source" src="IMG/Tally/1 (6).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,2,-1)"><img class="source" src="IMG/Tally/1 (7).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,2,-1)"><img class="source" src="IMG/Tally/1 (8).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+        </div>
+      </div>
+      <div class="section">
+        <div id="morin" class="scroll"></div>
+        <div class="sous_titre">Extension - Morin height</div>
+        <div class="container_liste_photos">
+          <div class="photo" onclick="test(this,3,-1)"><img class="source" src="IMG/Morin-Height/1 (1).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,3,-1)"><img class="source" src="IMG/Morin-Height/1 (2).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,3,-1)"><img class="source" src="IMG/Morin-Height/1 (3).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,3,-1)"><img class="source" src="IMG/Morin-Height/1 (4).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+        </div>
+      </div>
+      <div class="section">
+        <div id="lac" class="scroll"></div>
+        <div class="sous_titre">Finition extérieur - Lac Ashton</div>
+        <div class="container_liste_photos">
+          <div class="photo" onclick="test(this,4,-1)"><img class="source" src="IMG/Lac/1 (1).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,4,-1)"><img class="source" src="IMG/Lac/1 (2).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,4,-1)"><img class="source" src="IMG/Lac/1 (3).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,4,-1)"><img class="source" src="IMG/Lac/1 (4).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,4,-1)"><img class="source" src="IMG/Lac/1 (5).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,4,-1)"><img class="source" src="IMG/Lac/1 (6).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+        </div>
+      </div>
+      <div class="section">
+        <div id="source" class="scroll"></div>
+        <div class="sous_titre">Finition intérieur - Montée de la source</div>
+        <div class="container_liste_photos">
+          <div class="photo" onclick="test(this,5,-1)"><img class="source" src="IMG/Source/1 (1).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,5,-1)"><img class="source" src="IMG/Source/1 (2).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,5,-1)"><img class="source" src="IMG/Source/1 (3).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,5,-1)"><img class="source" src="IMG/Source/1 (4).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+          <div class="photo" onclick="test(this,5,-1)"><img class="source" src="IMG/Source/1 (5).webp" width="350"
+              alt="photo" loading="lazy"><ion-icon name="resize-outline"></ion-icon></div>
+        </div>
+      </div>
+      <div class="remove" onclick="remonter()"><ion-icon name="caret-up-outline"></ion-icon><span>Remonter en haut de la
+          page</span></div>
+  </main>
+  <footer id="footer">
+    <div class="principale">
+      <div class="colonne">
+        <span class="nom">Coordonnées</span>
+        <div class="info_footer">
+          <ion-icon name="location-outline"></ion-icon>
+          <span>2945 rue des Vers-luisant, J8B 2C9, Sainte-Adèle</span>
+        </div>
+        <div class="info_footer">
+          <ion-icon name="call-outline"></ion-icon>
+          <span>438-990-8198</span>
+        </div>
+        <div class="info_footer">
+          <ion-icon name="mail-outline"></ion-icon>
+          <span>vialleconstruction@gmail.com</span>
+        </div>
+      </div>
+      <div class="colonne">
+        <span class="nom">Services</span>
+        <div class="li">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+          <a href="../Services/">Conception</a>
+        </div>
+        <div class="li">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+          <a href="../Services/">Construction</a>
+        </div>
+        <div class="li">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+          <a href="../Services/">Rénovation</a>
+        </div>
+      </div>
+      <div class="colonne">
+        <a href='../Partenaire/' class="nom">Voir nos Partenaires</a>
+      </div>
+    </div>
+    <div class="liens">
+      <div class="reseaux">
+        <a href="https://www.facebook.com/profile.php?id=61557296462746"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.instagram.com/vialle_construction?igsh=MWVoNnkyNTljbDZjYg=="><ion-icon
+            name="logo-instagram"></ion-icon></a>
+        <a href="https://www.tiktok.com/@vialleconstruction"><ion-icon name="logo-tiktok"></ion-icon></a>
+      </div>
+      <div class="droit">2024 Vialle Construction. Tous droits réservés.</div>
+      <div class="prod">Fait par <a href="https://www.linkedin.com/in/régis-mathon-661225300">Régis Mathon</a></div>
+    </div>
+  </footer>
+  <div class="defilement">
+    <ion-icon class="fleche" name="arrow-back-outline" onclick="change(-1)"></ion-icon>
+    <div class="container_photos">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (1).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (2).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (3).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (4).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (5).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (6).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (7).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (8).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (9).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (10).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (11).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (12).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (13).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (14).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (15).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (16).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (17).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (18).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (19).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (20).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (21).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (22).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (23).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (24).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (25).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (26).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (27).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (28).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (29).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (30).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (31).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (32).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (33).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (34).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (35).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (36).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (37).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Vers-Luisant/1 (38).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Traverse/1 (1).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Traverse/1 (2).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Traverse/1 (3).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Morin-Height/1 (1).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Morin-Height/1 (2).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Morin-Height/1 (3).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Morin-Height/1 (4).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Lac/1 (1).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Lac/1 (2).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Lac/1 (3).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Lac/1 (4).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Lac/1 (5).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Lac/1 (6).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Source/1 (1).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Source/1 (2).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Source/1 (3).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Source/1 (4).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Source/1 (5).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Tally/1 (1).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Tally/1 (2).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Tally/1 (3).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Tally/1 (4).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Tally/1 (5).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Tally/1 (6).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Tally/1 (7).webp" alt="photo-grand" loading="lazy">
+      <img class="select_photo" src="IMG/Tally/1 (8).webp" alt="photo-grand" loading="lazy">
+    </div>
+    <ion-icon class="fleche" name="arrow-forward-outline" onclick="change(1)"></ion-icon>
+    <ion-icon class="croix" name="close-outline" onclick="fermer()"></ion-icon>
+  </div>
+  <script src="../Script/realisation.js?vs=11"></script>
+  <script src="../Script/sidebar.js?vs=11"></script>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        min-height: 600px;
+        position: relative;
+        font-family: "Poppins", sans-serif;
+    }
+
+    main {
+        height: auto;
+        min-height: calc(100%-100px);
+        padding: 30px 0;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .form {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .title {
+        background-color: white;
+        z-index: 1;
+        box-shadow: 0 0 30px -10px black;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .para {
+        font-size: 20px;
+    }
+
+    .message {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .int {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        margin: 50px 0;
+        padding: 30px;
+        border-radius: 30px;
+        box-shadow: 0 0 30px -10px black;
+        gap: 20px;
+        z-index: 2;
+        background-color: white;
+    }
+
+    .info {
+        gap: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .info span {
+        color: red;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        height: 20px;
+        font-size: 18px;
+    }
+
+    .info div {
+        width: 100%;
+        height: 1px;
+        background-color: black;
+    }
+
+    .info:nth-of-type(4) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    textarea {
+        padding: 10px;
+        resize: none;
+        width: 500px;
+        aspect-ratio: 2;
+        outline: none;
+        border: solid 1px black;
+    }
+
+    #btn_avis {
+        background-color: #FCCB00;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        border-radius: 20px;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+
+    .res {
+        display: none;
+    }
+
+    .btn {
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn button {
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 20px;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+
+    .btn button:nth-of-type(2) {
+        background-color: red;
+    }
+
+    .cercle {
+        font-size: 100px;
+        color: black;
+        position: absolute;
+        z-index: 0;
+        animation: infinite cercle ease-in-out 30s;
+        opacity: 0.3;
+    }
+
+    .cercle:nth-of-type(1) {
+        left: 10px;
+        top: 10px;
+    }
+
+    .cercle:nth-of-type(2) {
+        bottom: 200px;
+        left: 20%;
+    }
+
+    .cercle:nth-of-type(3) {
+        right: 20px;
+        top: 50%;
+    }
+
+    .cercle:nth-of-type(4) {
+        top: -50px;
+        left: 25%;
+    }
+
+    .cercle:nth-of-type(5) {
+        right: 30%;
+        bottom: 30%;
+    }
+
+    .cercle:nth-of-type(6) {
+        right: 100px;
+        top: -110px;
+    }
+
+    @keyframes cercle {
+        0%{
+            translate: 0 0;
+        }
+        50%{
+            translate: 0 200px;
+        }
+        100%{
+            translate: 0 0;
+        }
+    }
+
+@media (max-width:950px) {
+
+    .titre {
+        width: 100%;
+        background-image: url('../Realisations/titre.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #FCCB00;
+    }
+
+    .container_phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        width: 70%;
+        margin-top: 40px;
+    }
+}
+
+@media(max-width: 700px) {
+    .form {
+        width: 90%;;
+    }
+    .int {
+        width: 90%;
+    }
+    .info {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+        aspect-ratio: 1;
+    }
+}
+
+@media(max-width: 400px) {
+    .titre {
+        font-size: 30px;
+    }
+}
+
+    

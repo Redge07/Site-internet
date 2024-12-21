@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGCCDT832D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-SGCCDT832D');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#E9E9E9">
+  <title>Vialle Construction</title>
+  <meta name="description"
+    content="Donnez votre avis à Vialle Construction pour nous aider à toujours mieux répondre à vos attentes">
+  <link rel="icon" href="../logo.png" type="image/png">
+  <link rel="stylesheet" href="../Style/header.css?vs=12" />
+  <link rel="stylesheet" href="../Style/avis.css?vs=12" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <ion-icon class="sidebar open_menu" onclick="sidebar(); sidebar2();" name="menu-outline"></ion-icon>
+  <ion-icon class="sidebar close_menu" onclick="sidebar(); sidebar2();" name="close-outline"></ion-icon>
+  <div id="header_phone">
+    <div class="trait"></div>
+    <div class="trait"></div>
+    <div class="trait"></div>
+    <div class="trait"></div>
+    <div class="trait"></div>
+    <div class="onglets_phone">
+      <a href="../" class="onglet">Accueil</a>
+      <a href="../Services/" class="onglet">Services</a>
+      <a href="../Realisations/" class="onglet">Réalisations</a>
+      <a href="" class="onglet active">Avis client</a>
+      <a href="../Contact/" class="onglet">Contact</a>
+    </div>
+    <div class="coord">
+      <span>2945 rue des Vers-luisant, J8B 2C9, Sainte-Adèle</span>
+      <span>438-990-8198</span>
+      <span>vialleconstruction@gmail.com</span>
+    </div>
+  </div>
+  <header id="header">
+    <div class="cadre"><a class="lien_a" href="../"><img src="../logo.png" alt="logo" loading="lazy"></a><span>VIALLE
+        CONSTRUCTION</span><a href="https://www.facebook.com/profile.php?id=61557296462746"><ion-icon
+          name="logo-facebook"></ion-icon></a><a href="https://www.tiktok.com/@vialleconstruction"><ion-icon
+          name="logo-tiktok"></ion-icon></a><a
+        href="https://www.instagram.com/vialle_construction?igsh=MWVoNnkyNTljbDZjYg=="><ion-icon
+          name="logo-instagram"></ion-icon></a></div>
+    <div class="onglets">
+      <a href="../" class="onglet">Accueil</a>
+      <a href="../Services/" class="onglet">Services</a>
+      <a href="../Realisations/" class="onglet">Réalisations</a>
+      <a href="" class="onglet active">Avis client</a>
+      <a href="../Contact/" class="onglet">Contact</a>
+    </div>
+  </header>
+  <main id="main">
+    <div class="container">
+      <ion-icon name="chatbox-outline" class="cercle"></ion-icon>
+      <ion-icon name="checkbox-outline" class="cercle"></ion-icon>
+      <ion-icon name="chatbox-ellipses-outline" class="cercle"></ion-icon>
+      <ion-icon name="chatbubbles-outline" class="cercle"></ion-icon>
+      <ion-icon name="alert-circle-outline" class="cercle"></ion-icon>
+      <ion-icon name="chatbubble-outline" class="cercle"></ion-icon>
+      <div class="form">
+        <div class="title">
+          <h1>Votre avis nous intéresse</h1>
+          <p class="para">Nous avons eu le plaisir de construire votre nouveau chez-vous ! Votre retour est précieux
+            pour nous. N’hésitez pas à partager vos impressions et à nous laisser un message pour nous aider à toujours
+            mieux répondre à vos attentes.</p>
+        </div>
+        <div class="message">
+          <div class="int">
+            <div class="info">
+              <input type="text" placeholder="Entrez votre nom...">
+              <div></div>
+              <span></span>
+            </div>
+            <div class="info">
+              <input type="text" placeholder="Entrez votre prénom...">
+              <div></div>
+              <span></span>
+            </div>
+            <div class="info">
+              <input type="mail" placeholder="Entrez votre mail...">
+              <div></div>
+              <span></span>
+            </div>
+            <div class="info">
+              <textarea type="text" placeholder="Entrer votre message..."></textarea>
+              <span></span>
+            </div>
+            <button id="btn_avis" onclick="avis()">Envoyer</button>
+            <div class="res">
+              <p>Confirmer l'envoi de votre message</span>
+              <div class="btn"><button id="valid">Oui</button><button id="novalid">Non</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../Script/sidebar.js?vs=11"></script>
+    <script src="../Script/avis.js?vs=12"></script>
+  </main>
+  <footer id="footer">
+    <div class="principale">
+      <div class="colonne">
+        <span class="nom">Coordonnées</span>
+        <div class="info_footer">
+          <ion-icon name="location-outline"></ion-icon>
+          <span>2945 rue des Vers-luisant, J8B 2C9, Sainte-Adèle</span>
+        </div>
+        <div class="info_footer">
+          <ion-icon name="call-outline"></ion-icon>
+          <span>438-990-8198</span>
+        </div>
+        <div class="info_footer">
+          <ion-icon name="mail-outline"></ion-icon>
+          <span>vialleconstruction@gmail.com</span>
+        </div>
+      </div>
+      <div class="colonne">
+        <span class="nom">Services</span>
+        <div class="li">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+          <a href="../Services/">Conception</a>
+        </div>
+        <div class="li">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+          <a href="../Services/">Construction</a>
+        </div>
+        <div class="li">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+          <a href="../Services/">Rénovation</a>
+        </div>
+      </div>
+      <div class="colonne">
+        <a href='../Partenaire/' class="nom">Voir nos Partenaires</a>
+      </div>
+    </div>
+    <div class="liens">
+      <div class="reseaux">
+        <a href="https://www.facebook.com/profile.php?id=61557296462746"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.instagram.com/vialle_construction?igsh=MWVoNnkyNTljbDZjYg=="><ion-icon
+            name="logo-instagram"></ion-icon></a>
+        <a href="https://www.tiktok.com/@vialleconstruction"><ion-icon name="logo-tiktok"></ion-icon></a>
+      </div>
+      <div class="droit">2024 Vialle Construction. Tous droits réservés.</div>
+      <div class="prod">Fait par <a href="https://www.linkedin.com/in/régis-mathon-661225300">Régis Mathon</a></div>
+    </div>
+  </footer>
+  </div>
+</body>
+
+</html>

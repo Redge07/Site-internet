@@ -1,0 +1,250 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.intro {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.intro span {
+    font-weight: bold;
+    font-size: 40px;
+    color: #4e4e4e;
+}
+
+.intro p {
+    font-size: 20px;
+}
+
+.parcours {
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    min-width: 578px;
+    border-radius: 30px;
+    box-shadow: 0 0 40px -15px black;
+}
+
+.parcours p:nth-of-type(1){
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.parcours p span {
+    color: #FCCB00;
+}
+
+.parcours p:nth-of-type(2){
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.parcours p:nth-of-type(3){
+    font-size: 17px;
+    text-align: center;
+    margin-top: 50px;
+    color: #434343;
+}
+
+.parcours p:nth-of-type(3) a{
+    color: #FCCB00;
+    font-weight: bold;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: #f5f5f5;
+    margin-top: 50px;
+    padding: 40px 0;
+    gap: 50px;
+}
+
+.partenaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+    box-shadow: 0 0 30px -10px;
+    font-size: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 1;
+    background-color: white;
+}
+
+.partenaire:hover {
+    scale: 1.1; 
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.titre {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.container_coord {
+    width: 90%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.cadre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px -8px grey;
+    cursor: pointer;
+    transition: 0.5s;
+    max-width: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+.cadre:hover {
+    box-shadow: 0 0 5px 0 black;
+    translate: 0 -15px;
+}
+
+.cadre ion-icon {
+    border-radius: 50%;
+    background-color: #FCCB00;
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+}
+
+.cadre img {
+    border-radius: 10px;
+    width: 100px;
+}
+
+.cadre span {
+    font-size: 25px;
+    text-align: center;
+}
+
+.cadre iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+@media (max-width:1500px) {
+    main {
+        align-items: center;
+    }
+    .intro {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:1050px) {
+    .infos {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+    .cadre span {
+        font-size: 20px;
+    }
+    .cadre {
+        width: 80%;
+    }
+}
+
+@media (max-width:900px) {
+    .intro span {
+        font-size: 25px;
+    }
+    .intro p {
+        font-size: 15px;
+    }
+    .parcours {
+        margin: 0 auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 80%;
+        min-width: 0px;
+        border-radius: 30px;
+        box-shadow: 0px 0 40px -15px black;
+    }
+}
+
+@media (max-width:760px) {
+    .parcours p:nth-of-type(1){
+        font-size: 25px;
+    }
+}
+
+@media (max-width:600px) {
+    .partenaire {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:450px) {
+    .parcours p:nth-of-type(1){
+        font-size: 22px;
+    }
+    
+    .parcours p:nth-of-type(2){
+        font-size: 18px;
+    }
+    
+    .parcours p:nth-of-type(3){
+        font-size: 15px;
+    }
+    .titre {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:400px) {
+    .cadre span {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+.img {
+    background-image: url('../Contact/fond_k.webp');
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.4);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    gap: 50px;
+}
+
+.burger_msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    animation: zoom infinite 2s ease-in-out;
+    transition: 0.5s;
+}
+
+.burger_msg:hover {
+    color: #FCCB00;
+}
+
+@keyframes zoom {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 0.9;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+.burger_msg div {
+    text-align: center;
+}
+
+.burger_msg ion-icon {
+    font-size: 70px;
+}
+
+.coordo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.adresse {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.adresse ion-icon {
+    font-size: 25px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+    color: black;
+}
+
+.adresse div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+h2 {
+    color: #FCCB00;
+}
+
+.adresse div span {
+    color: white;
+}
+
+.box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: white;
+    filter: brightness(0.95);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.8s, opacity 1s;
+    z-index: 2;
+    padding: 30px;
+    padding-top: 50px;
+    border-radius: 30px;
+    transform-origin: center;
+    opacity: 0;
+}
+
+.box.open {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.infos_c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.info_c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+
+.info_c::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.info_c span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    width: 200px;
+}
+
+#sujet {
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    width: 200px;
+}
+
+.contenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    position: relative;
+}
+
+.msg {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    border: solid 1px black;
+    border-radius: 20px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #FCCB00;
+    padding: 10px 20px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+button:active {
+    scale: 0.9;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.wrong {
+    color: red;
+    font-size: 10px;
+    position: absolute;
+    bottom: -20px;
+}
+
+.wrong_message {
+    bottom: 50px;
+}
+
+.sujet {
+    color: black;
+    background-color: white;
+}
+
+option {
+    color: black;
+    background-color: white;
+}
+
+@media (max-width:1100px) {
+    .burger_msg {
+        font-size: 40px;
+    }
+
+    .titre::after {
+        display: none;
+    }
+
+    .titre p {
+        padding-bottom: 0px;
+    }
+}
+
+@media (max-width:800px) {
+
+    .box {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+        border-radius: 0;
+        top: 0;
+        left: 0;
+        transform: translate(-110%, 0);
+        opacity: 0;
+    }
+
+    .box.open {
+        height: auto;
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    textarea {
+        width: 250px;
+    }
+}
+
+@media (max-width:700px) {
+    .burger_msg {
+        font-size: 20px;
+        gap: 5px;
+    }
+
+    .info_c span {
+        font-size: 100%;
+    }
+
+    .msg {
+        font-size: 30px;
+    }
+
+    .burger_msg div {
+        font-weight: 700;
+    }
+
+    .burger_msg ion-icon {
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .titre p {
+        font-weight: 300;
+    }
+
+    .adresse ion-icon {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .adresse div h2 {
+        font-weight: 400;
+    }
+}
+
+@media (max-width:500px) {
+    .adresse span {
+        font-size: 13px;
+    }
+}
